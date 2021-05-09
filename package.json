@@ -1,26 +1,37 @@
 {
-  "name": "dialox",
-  "version": "1.0.0",
-  "description": "A small modern dialog library for your leisure",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "cypress "
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nohns/dialox.git"
-  },
-  "keywords": [
-    "dialog",
-    "esm",
-    "dialox",
-    "nohns",
-    "alert"
-  ],
-  "author": "Asger Nohns",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nohns/dialox/issues"
-  },
-  "homepage": "https://github.com/nohns/dialox#readme"
+    "name": "dialox",
+    "version": "1.0.0",
+    "description": "A small modern dialog library for your leisure",
+    "type": "module",
+    "source": "src/index.ts",
+    "exports": "./dist/index.modern.js",
+    "main": "./dist/index.js",
+    "module": "./dist/index.module.js",
+    "unpkg": "./dist/index.umd.js",
+    "typings": "./dist/index.d.ts",
+    "scripts": {
+        "build": "microbundle",
+        "dev": "microbundle watch",
+        "test": "cypress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nohns/dialox.git"
+    },
+    "keywords": [
+        "dialog",
+        "esm",
+        "dialox",
+        "nohns",
+        "alert"
+    ],
+    "author": "Asger Nohns",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nohns/dialox/issues"
+    },
+    "homepage": "https://github.com/nohns/dialox#readme",
+    "devDependencies": {
+        "microbundle": "^0.13.0"
+    }
 }

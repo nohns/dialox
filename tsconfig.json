@@ -1,0 +1,10 @@
+{
+    "include": ["./src"],
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "strict": true,
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext"
+    }
+}
